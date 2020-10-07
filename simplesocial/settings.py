@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'groups',
     'posts',
+    'django_misaka',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
