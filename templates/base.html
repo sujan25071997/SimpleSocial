@@ -38,7 +38,7 @@
                 Options
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'posts:all' %}">Post</a>
+                <a class="dropdown-item" href="{% url 'posts:create' %}">Post</a>
                 <a class="dropdown-item" href="{% url 'groups:all' %}">Group</a>
                 <a class="dropdown-item" href="{% url 'groups:create' %}">Create Group</a>
                 <div class="dropdown-divider"></div>
@@ -47,7 +47,7 @@
               </li>
               {% else %}
               <li class="nav-item">
-                <a class="nav-link" href="#">Groups</a>
+                <a class="nav-link" href="{% url 'groups:all' %}">Groups</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'accounts:login' %}">Log In</a>
@@ -74,4 +74,9 @@
 
 
   </body>
+
+<script type="text/javascript" src="{% static 'simplesocial/js/master.js' %}">
+
+</script>
+
 </html>
